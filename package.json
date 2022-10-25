@@ -10,6 +10,15 @@
     "compile": "rollup -c",
     "build": "electron-builder build --win"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skieslol/BetaCord.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Skieslol/BetaCord.git",
+    "email": "packetlol123@outlook.com"
+  },
+  "homepage": "https://github.com/Skieslol/BetaCord#readme",
   "author": "Skies",
   "license": "MIT",
   "dependencies": {
@@ -18,6 +27,7 @@
     "constants": "^0.0.2",
     "fs": "^0.0.1-security",
     "module": "^1.2.5",
+    "mongoose": "^6.7.0",
     "path": "^0.12.7",
     "path-browserify": "^1.0.1",
     "process": "^0.11.10",
