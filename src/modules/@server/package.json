@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "Beta's server for the api",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node ./src/app.js"
+  },
+  "keywords": [
+    "Server"
+  ],
+  "author": "Skies",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
