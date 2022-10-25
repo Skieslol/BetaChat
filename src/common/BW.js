@@ -3,13 +3,19 @@ const { join } = require("path");
 const { existsSync, mkdirSync } = require("fs");
 
 const original = process.env.ORIGINAL_PRELOAD;
-const backup = process.env.BACKUP_PRELOAD;
 const BetaDir = join(process.env.LOCALAPPDATA, "Beta");
+const IconsDir = join(BetaDir, "Icons");
+const BuildDir = join(BetaDir, "Builds");
 
 const Logger = require("../utils/console/Logger");
 const url = require("url");
+const updater = require("../core/updater");
+
+require("./bootstrap/buildInfo");
 
 if (!existsSync(BetaDir)) mkdirSync(BetaDir);
+if (!existsSync(IconsDir)) mkdirSync(IconsDir);
+if (!existsSync(BuildDir)) mkdirSync(BuildDir);
 
 module.exports = new (class ElectronBrowserWindow {
   constructor(
@@ -17,7 +23,7 @@ module.exports = new (class ElectronBrowserWindow {
       actions: {
         preload: {},
         BrowserWindow: electron.BrowserWindow,
-        patcher: {},
+        patcher: updater,
       },
     }
   ) {

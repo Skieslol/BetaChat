@@ -1,4 +1,4 @@
-const { BrowserWindow, app } = require("electron");
+const { BrowserWindow } = require("electron");
 const EventEmitter = require("events");
 const BW = require("../common/BW");
 const Settings = require("../common/Settings");

@@ -1,5 +1,9 @@
-const path = require("path");
+// not final product
 
-const buildInfo = require(path.join(process.resourcesPath, "buildInfo.json"));
+const { writeFileSync } = require("fs");
 
-module.exports = buildInfo
+let info = {
+    current_build: '{"currentBuild": "v0.0.1"}'
+}
+
+writeFileSync(`${process.env.LOCALAPPDATA}/Beta/buildInfo.json`, `${info.current_build.toString()}`);
