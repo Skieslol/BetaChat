@@ -1,6 +1,6 @@
 const { BrowserWindow } = require("electron");
 const EventEmitter = require("events");
-const BW = require("../common/BW");
+const BW = require("../common/BrowserWindow");
 const Settings = require("../common/Settings");
 const { updater } = require("./updater");
 const Server = require("../modules/@server/src/app");
