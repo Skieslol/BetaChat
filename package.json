@@ -2,7 +2,7 @@
   "name": "Beta",
   "version": "0.0.1",
   "description": "Beta is a Remake of Discord - Made for Fun",
-  "main": "./src/BetaChat/index.ts",
+  "main": "./src/BetaChat/src/core/index.js",
   "repository": "https://github.com/Skieslol/BetaChat.git",
   "author": "Skieslol <83387797+Skieslol@users.noreply.github.com>",
   "license": "MIT",
@@ -12,14 +12,15 @@
     "api:dev": "ts-node-dev ./src/@api/api.ts",
     "install": "npm install",
     "test": "jest",
-    "start": "npx electron ./src/BetaChat/core/index.js",
+    "start": "npx electron ./src/BetaChat/src/core/index.js",
     "compile": "rollup -c",
-    "build": "electron-builder build --win"
+    "build": "electron-packager . --overwrite --asar --icon=src/BetaChat/src/common/assets/icon.ico"
   },
   "dependencies": {
     "@types/express": "^4.17.14",
     "@types/node": "^18.11.7",
     "body-parser": "^1.20.1",
+    "electron": "^21.2.0",
     "express": "^4.18.2",
     "mongoose": "^6.7.0",
     "postcss": "^8.4.18",
@@ -27,5 +28,8 @@
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.8.4"
+  },
+  "devDependencies": {
+    "electron-packager": "^17.0.0"
   }
 }

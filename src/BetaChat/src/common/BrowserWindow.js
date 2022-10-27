@@ -29,8 +29,9 @@ module.exports = new (class ElectronBrowserWindow {
   ) {
     function createWindow() {
       const window = new electron.BrowserWindow({
-        width: 1280,
+        width: 900,
         height: 720,
+        icon: "./assets/icon.ico",
         webPreferences: {
           preload: join(__dirname, "../", "renderer", "preload.js"),
           sandbox: false,
