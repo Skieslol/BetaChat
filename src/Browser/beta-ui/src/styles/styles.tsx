@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const InputField = styled.input`
   font-family: "Inter";
@@ -37,7 +37,7 @@ export const Button = styled.button`
   background-color: #2b09ff;
   color: #fff;
   border-radius: 10px;
-  padding: 25px;
+  padding: 25px 0;
   font-weight: 500;
   transition: 250ms background-color ease;
   &:hover {
