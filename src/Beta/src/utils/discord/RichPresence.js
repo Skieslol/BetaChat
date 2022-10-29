@@ -10,7 +10,7 @@ module.exports = new (class Connect {
         RPC.on("ready", () => {
           RPC.setActivity({
             state: "BetaChat - Desktop",
-            details: "Chatting with Users",
+            details: "Beta - DEVELOPMENT",
             largeImageKey: "ab",
             largeImageText: "Chatting with Users Using Beta.",
             buttons: [
