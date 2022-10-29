@@ -11,6 +11,7 @@ const Logger = require("../utils/console/Logger");
 const url = require("url");
 const updater = require("../core/updater");
 const RichPresence = require("../utils/discord/RichPresence");
+const { kill } = require("../utils/discord/RichPresence");
 
 require("./app/buildInfo");
 
@@ -39,7 +40,7 @@ module.exports = new (class ElectronBrowserWindow {
         },
       });
 
-      window.loadURL("http://localhost:3000/register")
+      window.loadURL("http://localhost:3000/register");
 
       // window.loadURL(
       //   url.format({
@@ -65,11 +66,15 @@ module.exports = new (class ElectronBrowserWindow {
     ) {
       process.env.PATH = electron.app.getAppPath();
     }
-    
+
     let discordRPC = true;
 
-    RichPresence.connect();
-
-    Logger.Log(options);
+    if (discordRPC === true) {
+      RichPresence.connect();
+      Logger.Log("Connected DiscordRPC")
+    } else {
+      RichPresence.kill();
+      Logger.Error("Failed to Connected");
+    }
   }
 })();

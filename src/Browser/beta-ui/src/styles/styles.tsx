@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { PageProps } from "./styleTypes";
 
 export const InputField = styled.input`
   font-family: "Inter";
@@ -49,10 +50,10 @@ export const Button = styled.button`
   }
 `;
 
-export const Page = styled.div`
+export const Page = styled.div<PageProps>`
   background-color: #1a1a1a;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: ${(props: any) => props.display};
+  justify-content: ${(props: any) => props.justifyContent};
+  align-items: ${(props: any) => props.alignItems};
 `;
