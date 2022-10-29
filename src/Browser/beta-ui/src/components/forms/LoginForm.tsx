@@ -7,7 +7,7 @@ import {
 import styles from "./main.module.scss";
 import { Link } from "react-router-dom";
 
-export const RegisterForm = () => {
+export const LoginForm = () => {
   const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
   };
@@ -18,25 +18,15 @@ export const RegisterForm = () => {
         <InputLabel htmlFor="email">Email</InputLabel>
         <InputField type="email" id="email" />
       </InputContainer>
-      <section className={styles.nameFieldRow}>
-        <InputContainer>
-          <InputLabel htmlFor="username">Username</InputLabel>
-          <InputField type="text" id="username" />
-        </InputContainer>
-        <InputContainer>
-          <InputLabel htmlFor="id">id</InputLabel>
-          <InputField type="id" id="id" />
-        </InputContainer>
-      </section>
-      <InputContainer>
+      <InputContainer className={styles.loginFormPassword}>
         <InputLabel htmlFor="password">Password</InputLabel>
         <InputField type="password" id="password" />
       </InputContainer>
-      <Button className={styles.button}>Create Account</Button>
+      <Button className={styles.button}>Login</Button>
       <div className={styles.footerText}>
-        <span>Already have an Account? </span>
-        <Link to="/login">
-          <span>Login</span>
+        <span>Don't have an Account? </span>
+        <Link to="/register">
+          <span>Register</span>
         </Link>
       </div>
     </form>

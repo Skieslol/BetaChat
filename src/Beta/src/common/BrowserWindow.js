@@ -39,7 +39,7 @@ module.exports = new (class ElectronBrowserWindow {
         },
       });
 
-      window.loadURL("http://localhost:3000")
+      window.loadURL("http://localhost:3000/register")
 
       // window.loadURL(
       //   url.format({
