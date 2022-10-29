@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+form {
+    width: 800px;
+}
+
+.nameFieldRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    gap: 8px;
+}
+
+.button {
+    margin: 8px 0;
+}

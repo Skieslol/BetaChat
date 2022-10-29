@@ -39,13 +39,15 @@ module.exports = new (class ElectronBrowserWindow {
         },
       });
 
-      window.loadURL(
-        url.format({
-          pathname: join(__dirname, "..", "ui", "index.html"),
-          protocol: "file:",
-          slashes: true,
-        })
-      );
+      window.loadURL("http://localhost:3000")
+
+      // window.loadURL(
+      //   url.format({
+      //     pathname: join(__dirname, "..", "ui", "index.html"),
+      //     protocol: "file:",
+      //     slashes: true,
+      //   })
+      // );
     }
 
     electron.app.whenReady().then(() => {
