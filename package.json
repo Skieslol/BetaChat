@@ -1,15 +1,13 @@
 {
   "name": "Beta",
   "version": "0.0.1",
-  "description": "Beta is a Remake of Discord - Made for Fun",
+  "description": "Beta is a Fast Chat Application - Made for Fun",
   "main": "./src/Beta/src/core/index.js",
   "repository": "https://github.com/Skieslol/BetaChat.git",
   "author": "Skieslol <83387797+Skieslol@users.noreply.github.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "api:start": "ts-node ./src/@api/api.ts",
-    "api:dev": "ts-node-dev ./src/@api/api.ts",
     "install": "npm install",
     "test": "jest",
     "start": "npx electron ./src/Beta/src/core/index.js",
