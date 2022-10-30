@@ -1587,7 +1587,7 @@ electron-packager@^17.0.0:
 
 electron@^21.2.0:
   version "21.2.0"
-  resolved "https://registry.npmjs.org/electron/-/electron-21.2.0.tgz"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-21.2.0.tgz#8eb65d69b36aa8dac0ee7330eab70181df211c8b"
   integrity sha512-oKV4fo8l6jlOZ1cYZ4RpZz02ZxLuBo3SO7DH+FrJ8uDyCirP+eVJ/qlzu23odtNe0P7S/mYAZbC6abZHWoqtLg==
   dependencies:
     "@electron/get" "^1.14.1"
