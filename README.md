@@ -4,4 +4,4 @@ BetaChat is a fast chat app that was made by 2 people, If you find any bugs repo
 Skies
 ![image](https://user-images.githubusercontent.com/69837533/198858023-8e07918e-8818-4a4c-896b-bd161ceac3b3.png)
 
-If you use the source code use ```JavaScript npm i and npm run start``` then head over to  src/Browser/beta-ui & dp ```JavaScript npm i and npm start```
+If you use the source code use ```npm i and npm run start``` then head over to  src/Browser/beta-ui & dp ```npm i and npm start```
