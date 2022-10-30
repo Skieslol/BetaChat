@@ -1,9 +1,9 @@
 {
   "name": "Beta",
   "version": "0.0.1",
-  "description": "Beta is a Remake of Discord - Made for Fun",
+  "description": "Beta is a Fast Chat Application - Made for Fun",
   "info": {
-    "description": "Beta is a Remake of Discord - Beta uses a lot of Discord's Source Code"
+    "description": "Beta is a Fast Chat Application - Beta Desktop"
   },
   "main": "./src/core/index.js",
   "private": true,
