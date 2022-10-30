@@ -1,3 +1,5 @@
+<img src="./banner.jpg">
+
 # BetaChat
 BetaChat is a fast chat app BetaChat was made by Skies & Ghastly Skylie, you can have fun with friends or game with your friends, make servers, make friends, meet users, try not to make the platform lag like hell
 
