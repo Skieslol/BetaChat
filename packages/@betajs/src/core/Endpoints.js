@@ -1,8 +1,8 @@
-const baseURL = "https://localhost";
+const baseURL = "https://localhost:3000";
 const APIUrl = `${baseURL}/api`;
 
-const Login = `${APIUrl}/auth/login`;
-const Logout = `${APIUrl}/auth/logout`;
+const Login = `${APIUrl}/login`;
+const Logout = `${APIUrl}/logout`;
 
 const Guilds = `${APIUrl}/guilds`;
 const Channels = `${APIUrl}/channels`;
