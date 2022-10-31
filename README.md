@@ -10,5 +10,5 @@ if you find any bugs please make a pull request or contact us Skies#2001 or Ghas
 - Download node [here](https://nodejs.org/en/) 
 - Open `InstallPackages.bat`
 - Open `InstallExternal.bat`
-- Open `RunWebsite.bat` if you want just the website
-- Open `RunWebsite.bat & RunApp.bat` to get the desktop application
+- Run `RunWebsite.bat` if you want just the website
+- Have `RunWebsite.bat Opened & RunApp.bat` to get the desktop application
