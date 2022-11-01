@@ -57,3 +57,17 @@ export const Page = styled.div<PageProps>`
   justify-content: ${(props: any) => props.justifyContent};
   align-items: ${(props: any) => props.alignItems};
 `;
+
+export const GuildSidebarStyle = styled.div`
+  position: absolute;
+  top 0;
+  left: 0;
+  height: 100%;
+  width: 350px;
+  background-color: #1f1f1f;
+`;
+
+export const GuildChannelStyle = styled.div`
+  height: 100%;
+  margin-left: 350px;
+`

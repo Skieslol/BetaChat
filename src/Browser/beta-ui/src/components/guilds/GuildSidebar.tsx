@@ -1,7 +1,11 @@
+import { GuildSidebarStyle } from "../../styles/styles";
+
 export const GuildSidebar = () => {
     return (
-        <aside>
-            Aside
-        </aside>
+        <GuildSidebarStyle>
+            <header>
+                Guilds
+            </header>
+        </GuildSidebarStyle>
     );
 }

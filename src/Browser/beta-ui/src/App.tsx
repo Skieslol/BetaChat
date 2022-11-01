@@ -1,5 +1,6 @@
 import { Outlet, Route, Routes } from "react-router-dom";
 import { Guild } from "./pages/Guild";
+import { GuildChannel } from "./pages/GuildChannel";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
 
@@ -9,8 +10,9 @@ function App() {
       <Routes>
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/channels/@me" element={<Guild />} />
-        <Route path=":id" element={<div>Name a Server Page</div>} />
+        <Route path="guilds" element={<Guild />}>
+          <Route path="guilds/:id" element={<GuildChannel />} />
+        </Route>
       </Routes>
     </>
   );
